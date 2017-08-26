@@ -38,7 +38,9 @@ function main()
 				console.log(data);
 				$('#ptable').slideToggle();
 				$('#display-block').slideToggle();
-				$('#display-block').css("background-color","#"+data.cpkHexColor);
+				$('body').css("background-color","#"+data.cpkHexColor);
+				$('body').css("margin-left","20px");
+				$('body').css("margin-top","20px");
 				sendDetails(data);
 			}
 		};
@@ -52,6 +54,7 @@ function main()
 	$('#up').on('click', function(){
 		$('#ptable').slideToggle();
 		$('#display-block').slideToggle();
+		$('body').css("background-color","white");
 	});
 		
 }
