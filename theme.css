@@ -193,22 +193,92 @@ body {
   }
 }
 
-table {
-	border-spacing:8px;
-	width: 100%;
+table,th,td {
+	border-collapse:collapse;
+	border: 1px solid black;
 }
 
 th,td {
-	background-color: white;
 	height: 50px;
 	text-align: center;
 }
 
-#esymbol {
-	width:105px;
-	font-size: 100px;
+table {
+    box-shadow: -4px 8px 5px rgba(0, 0, 0, 0.39)
 }
 
-table,th,td {
-	border: 1px solid black;
+th {
+	background-color: lightgoldenrodyellow;
+    color: black;
+    border-bottom-color: black;
+}
+
+.mainhead {
+	background-color: darkslategray;
+	color:white;
+}
+
+td {
+	background-color: white;
+}
+
+#tsymbol {
+	width: 180px;
+    height: 170px;
+    font-size: 100px;
+	border-bottom-color: black;
+}
+
+#tgroup {
+	width: 200px;
+    position: relative;
+    left: 210px;
+    top: -170px;
+    height: 172px;
+}
+
+#tatprops {
+	width: 400px;
+    height: 602px;
+    position: relative;
+    top: -340px;
+    left: 460px;
+}
+
+#tphyprops {
+	width: 400px;
+    height: 430px;
+    position: relative;
+    top: -935px;
+    left: 907px;
+}
+
+#tgeneral {
+	width: 410px;
+    height: 396px;
+    position: relative;
+    top: -1160px;
+    left: 0px;
+}
+
+#tdiscover {
+	width: 400px;
+    height: 86px;
+    position: relative;
+    top: -1245px;
+    left: 907px;
+}
+
+#uparrow {
+    width: 50px;
+    height: 50px;
+}
+
+#up {
+	position: fixed;
+    top: 625px;
+    width: 103%;
+    height: 100%;
+    left: -20px;
+	z-index=1;
 }
