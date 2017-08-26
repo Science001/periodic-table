@@ -9,11 +9,8 @@
 
  <!--
 Copyright (c) 2017 by Alma Madsen (https://codepen.io/nemophrost/pen/EkImb)
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 	
@@ -652,8 +649,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <div id="113" class="cell">
       <div class="element">
         <div class="at_num">113</div>
-        <div class="symbol">Uut</div>
-        <div class="at_details">unundivium<br />[284.18]</div>
+        <div class="symbol">Nh</div>
+        <div class="at_details">Nihonium<br />[284.18]</div>
       </div>
     </div>
     <div id="114" class="cell">
@@ -666,8 +663,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <div id="115" class="cell">
       <div class="element">
         <div class="at_num">115</div>
-        <div class="symbol">Uup</div>
-        <div class="at_details">ununpentium<br />[288.19]</div>
+        <div class="symbol">Mc</div>
+        <div class="at_details">Moscovium<br />[288.19]</div>
       </div>
     </div>
     <div id="116" class="cell">
@@ -680,15 +677,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <div id="117" class="cell">
       <div class="element">
         <div class="at_num">117</div>
-        <div class="symbol">Uus</div>
-        <div class="at_details">ununseptium<br />[294]</div>
+        <div class="symbol">Ts</div>
+        <div class="at_details">Tennessine<br />[294]</div>
       </div>
     </div>
     <div id="118" class="cell">
       <div class="element">
         <div class="at_num">118</div>
-        <div class="symbol">Uuo</div>
-        <div class="at_details">ununoctium<br />[294]</div>
+        <div class="symbol">Og</div>
+        <div class="at_details">Oganesson<br />[294]</div>
       </div>
     </div>
   </div>
@@ -916,60 +913,98 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   <div style="clear: both;"></div>
 </div>
 
-<br/>
-<br/>
 <div id="display-block">
-	<table>
+	<table id="tsymbol">
 		<tr>
 			<th id="esymbol" rowspan="2"></th>
-			<th>Group</th>
-			<th colspan="2">Atomic Properties</th>
-			<th colspan="2">Physical Properties</th>
+		</tr>
+	</table>
+	<table id="tgroup">
+		<tr>
+			<th class="mainhead">Group</th>
 		</tr>
 		<tr>
 			<td id="group"></td>
+		</tr>
+	</table>
+	<table id="tatprops">
+		<tr>
+			<th class="mainhead" colspan="2">Atomic Properties</th>
+		</tr>
+		<tr>
 			<th>Atomic Radius</th>
 			<td id="arad"></td>
-			<th>Phase:</th>
+		</tr>
+		<tr>
+			<th>Ionic Radius</th>
+			<td id="irad"></td>
+		</tr>
+		<tr>
+			<th>vanDelWaals radius</th>
+			<td id="vrad"></td>
+		</tr>
+		<tr>
+			<th>Bond Type</th>
+			<td id="btype"></td>
+		</tr>
+		<tr>
+			<th>Ionisation Energy</th>
+			<td id="ie"></td>
+		</tr>
+		<tr>
+			<th>Oxidation States</th>
+			<td id="oxst"></td>
+		</tr>
+	</table>
+	<table id="tphyprops">
+		<tr>
+			<th class="mainhead" colspan="2">Physical Properties</th>
+		</tr>
+		<tr>
+			<th>Phase</th>
 			<td id="phase"></td>
 		</tr>
 		<tr>
-			<th id="ename" colspan="2"></th>
-			<th>Ionic Radius</th>
-			<td id="irad"></td>
-			<th>Melting Point:</th>
+			<th>Melting Point</th>
 			<td id="mp"></td>
 		</tr>
 		<tr>
+			<th>Boiling Point</th>
+			<td id="bp"></td>
+		</tr>
+		<tr>
+			<th>Density</th>
+			<td id="density"></td>
+		</tr>
+	</table>
+	<table id="tgeneral">
+		<tr>
 			<th>Atomic Number:</th>
 			<td id="ano"></td>
-			<th>vanDelWaals radius</th>
-			<td id="vrad"></td>
-			<th>Boiling Point:</th>
-			<td id="bp"></td>
 		</tr>
 		<tr>
 			<th>Atomic Mass:</th>
 			<td id="amass"></td>
-			<th>Bond Type</th>
-			<td id="btype"></td>
-			<th>Density</th>
-			<td id="density"></td>
 		</tr>
 		<tr>
 			<th>Electron Affinity</th>
 			<td id="eaff"></td>
-			<th>Ionisation Energy</th>
-			<td id="ie"></td>
-			<td id="up" colspan="2"></td>
 		</tr>
 		<tr>
 			<th>Electronegativity</th>
 			<td id="eneg"></td>
-			<th>Oxidation States</th>
-			<td id="oxst"></td>
-			<th>discovered in</th>
+		</tr>
+	</table>
+	<table id="tdiscover">
+		<tr>
+			<th class="mainhead">Discovered in</th>
 			<td id="discover"></td>
+		</tr>
+	</table>
+	<table id="up">
+		<tr>
+			<th class="mainhead" style="width: 1200px;" id="ename"></th>
+			<td><img id="uparrow" src="/up.png" /></td>
 		</tr>
 	</table>
 </div>
@@ -978,4 +1013,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <script src='/ui/main.js'></script>
 </body>
 </html>
- 
