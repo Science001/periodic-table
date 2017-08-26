@@ -210,7 +210,6 @@ table {
 th {
 	background-color: lightgoldenrodyellow;
     color: black;
-    border-bottom-color: black;
 }
 
 .mainhead {
@@ -226,7 +225,6 @@ td {
 	width: 180px;
     height: 170px;
     font-size: 100px;
-	border-bottom-color: black;
 }
 
 #tgroup {
