@@ -221,6 +221,11 @@ td {
 	background-color: white;
 }
 
+td:hover {
+	color: crimson;
+	font-size: 150%;
+}
+
 #tsymbol {
 	width: 180px;
     height: 170px;
@@ -241,6 +246,13 @@ td {
     position: relative;
     top: -340px;
     left: 460px;
+	z-index: 1;
+	transition: width 1s, left 1s;
+}
+
+#tatprops:hover {
+	width: 800px;
+    left: 260px;
 }
 
 #tphyprops {
@@ -278,5 +290,5 @@ td {
     width: 103%;
     height: 100%;
     left: -20px;
-	z-index=1;
+	z-index=3;
 }
