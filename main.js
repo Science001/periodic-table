@@ -1,9 +1,13 @@
 function main()
 {
 	console.log("Yes");
-	$('#display-block').slideToggle();
-	
+	$('#ptable').fadeIn(1000);
 	function sendDetails(data){
+		$('#ptable').slideToggle();
+		$('#display-block').slideToggle();
+		$('body').css("background-color","#"+data.cpkHexColor);
+		$('body').css("margin-left","20px");
+		$('body').css("margin-top","20px");
 		$('#esymbol').text(data.symbol);
 		$('#group').text(data.groupBlock);
 		$('#arad').text(data.atomicRadius);
@@ -36,11 +40,6 @@ function main()
 				var data = request.responseText;
 				data = JSON.parse(data);
 				console.log(data);
-				$('#ptable').slideToggle();
-				$('#display-block').slideToggle();
-				$('body').css("background-color","#"+data.cpkHexColor);
-				$('body').css("margin-left","20px");
-				$('body').css("margin-top","20px");
 				sendDetails(data);
 			}
 		};
