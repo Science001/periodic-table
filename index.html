@@ -12,7 +12,7 @@ Copyright (c) 2017 by Alma Madsen (https://codepen.io/nemophrost/pen/EkImb)
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
+-->	
 	
 <!-- I, Ganesh Ramkumar (Science001), have developed this HTML & CSS template with Javascript to show element details on click. -->
 
@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <body translate="no" >
 
-  <div id="ptable" class="periodic">
+  <div id="ptable" class="periodic" style="display: none">
   <div class="periodic-row">
     <div id="1" class="cell">
       <div class="element">
@@ -96,7 +96,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       <div class="element">
         <div class="at_num">7</div>
         <div class="symbol">N</div>
-        <div class="at_details">nidivogen<br />14.007</div>
+        <div class="at_details">nitrogen<br />14.007</div>
       </div>
     </div>
     <div id="8" class="cell">
@@ -913,7 +913,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   <div style="clear: both;"></div>
 </div>
 
-<div id="display-block">
+<div id="display-block" style="display: none">
 	<table id="tsymbol">
 		<tr>
 			<th id="esymbol" rowspan="2"></th>
@@ -979,11 +979,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</table>
 	<table id="tgeneral">
 		<tr>
-			<th>Atomic Number:</th>
+			<th>Atomic Number</th>
 			<td id="ano"></td>
 		</tr>
 		<tr>
-			<th>Atomic Mass:</th>
+			<th>Atomic Mass</th>
 			<td id="amass"></td>
 		</tr>
 		<tr>
