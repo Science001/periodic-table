@@ -5,6 +5,7 @@ function main()
 	function sendDetails(data){
 		$('#ptable').slideToggle();
 		$('#display-block').slideToggle();
+		window.scrollTo(0,0);
 		$('body').css("background-color","#"+data.cpkHexColor);
 		$('body').css("margin-left","20px");
 		$('body').css("margin-top","20px");
@@ -54,6 +55,8 @@ function main()
 		$('#ptable').slideToggle();
 		$('#display-block').slideToggle();
 		$('body').css("background-color","white");
+		$('body').css("margin-left","");
+		$('body').css("margin-top","");
 	});
 		
 }
