@@ -10,6 +10,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/jQuery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'jQuery.js'));
+});
+
 app.get('/up.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'up.png'));
 });
