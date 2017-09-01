@@ -1,6 +1,7 @@
 
 body {
   font-family: Arial;
+  margin: 0;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -8,7 +9,7 @@ body {
 .periodic {
   position: relative;
   height: 200px;
-  margin-right: -1px;
+  padding-top: 10px;
   text-shadow: none;
 }
 .periodic-row {
@@ -16,6 +17,12 @@ body {
   height: 10%;
 }
 .cell {
+  float: left;
+  position: relative;
+  width: 5.55%;
+  height: 100%;
+}
+.scell {
   float: left;
   position: relative;
   width: 5.55%;
@@ -291,4 +298,15 @@ td:hover {
     height: 100%;
     left: -20px;
 	z-index=3;
+}
+
+.search {
+  width: 100%;
+  height: 40px;
+  background: rgba(102, 159, 198, 0.35);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 20px;
+  border-bottom: 2px solid crimson;
 }
