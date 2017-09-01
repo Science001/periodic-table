@@ -1,0 +1,16 @@
+{
+  "name": "ptforcitcos",
+  "version": "1.0.0",
+  "description": "The Periodic Table as a webapp",
+
+  "dependencies": {
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "periodic-table": "^0.0.8",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+"scripts": {"start": "node server.js"},
+  "author": "Ganesh Ramkumar R",
+  "license": "ISC"
+}
