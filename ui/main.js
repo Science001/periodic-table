@@ -2,6 +2,7 @@ function main()
 {
 	console.log("Yes");
 	$('#ptable').fadeIn(1000);
+	
 	function sendDetails(data){
 		$('#ptable').slideToggle();
 		$('#display-block').slideToggle();
@@ -58,6 +59,45 @@ function main()
 		$('body').css("margin-left","");
 		$('body').css("margin-top","");
 	});
+
+	$('#sicon').on('click', function(){
+		$('#sbar').val('');
+		$('#sbar').attr("placeholder","Search by atomic number, symbol or name");
+		$('#sbar').slideToggle();
+	});
+
+	$("#sbar").keypress(function(event) {
+    	if (event.which == 13) {
+        	event.preventDefault();
+        	search($(this).val());
+    	}
+	});
+
+    function search(q) {
+    	var request = new XMLHttpRequest();
 		
+		//To-do
+		request.onreadystatechange = function(){
+			if(request.readyState === XMLHttpRequest.DONE) {
+				if(request.status === 200) {
+					console.log("Search Request Success");
+					var data = request.responseText;
+					data = JSON.parse(data);
+					console.log(data);
+					$('#sbar').slideToggle();
+					sendDetails(data);
+				}
+				else if(request.status === 404) {
+					$('#sbar').val('');
+					$('#sbar').attr("placeholder","Data not found. Try again.");
+				}
+			}
+		};
+		
+		//Make request
+		request.open('GET','http://localhost/search?key=' + q,true);
+		request.send(null);
+    }
+
 }
 $(document).ready(main);
