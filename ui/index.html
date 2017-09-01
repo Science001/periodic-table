@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="/ui/theme.css" />
   <title>The Periodic Table</title>
 
  <!--
@@ -18,6 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </head>
 
 <body translate="no" >
+      <input type="text" id="sbar" class="search" style="display: none;"/>
 
   <div id="ptable" class="periodic" style="display: none">
   <div class="periodic-row">
@@ -43,7 +45,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     <div class="cell"></div>
     <div class="cell"></div>
     <div class="cell"></div>
-    <div class="cell"></div>
+    <div id="sicon" class="scell">
+      <img src="/searchicon.png" style="width: 100%;">
+    </div>
     <div id="2" class="cell">
       <div class="element">
         <div class="at_num">2</div>
