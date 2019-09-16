@@ -66,7 +66,7 @@ app.get('/search', function(req,res) {
 	}
 });
 
-var port = 80;
+const PORT = process.env.PORT || 80
 app.listen(port, function () {
-  console.log(`Listening on ${port}!`);
+  console.log(`Listening on ${PORT}!`);
 });
