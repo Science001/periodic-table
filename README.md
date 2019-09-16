@@ -1,6 +1,8 @@
 # periodic-table
 A simple periodic table project made for my college's Carnival of Science.
 
+The project is hosted at: https://grk-periodic-table.herokuapp.com/
+
 This was my very first project and acted as my stepping stone into backend development and AJAX requests. The Main Periodic Table UI was taken from a [CodePen by Alma Madsen](https://codepen.io/nemophrost/pen/EkImb). The tabular details UI was made by me.
 
 My main focus over this project was to try the NodeJS w/ ExpressJS backend development and on how to link the frontend with the backend using AJAX requests. This gave me exposure to npm modules, routing and dynamic UI updation.
