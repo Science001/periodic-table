@@ -10,24 +10,24 @@ function main()
 		$('body').css("background-color","#"+data.cpkHexColor);
 		$('body').css("margin-left","20px");
 		$('body').css("margin-top","20px");
-		$('#esymbol').text(data.symbol);
-		$('#group').text(data.groupBlock);
-		$('#arad').text(data.atomicRadius);
-		$('#phase').text(data.standardState);
-		$('#ename').text(data.name);
-		$('#irad').text(data.ionRadius);
-		$('#mp').text(data.meltingPoint);
-		$('#ano').text(data.atomicNumber);
-		$('#vrad').text(data.vanDelWaalsRadius);
-		$('#bp').text(data.boilingPoint);
-		$('#amass').text(data.atomicMass);
-		$('#btype').text(data.bondingType);
-		$('#density').text(data.density);
-		$('#eaff').text(data.electronAffinity);
-		$('#ie').text(data.ionizationEnergy);
-		$('#eneg').text(data.electronegativity);
-		$('#oxst').text(data.oxidationStates);
-		$('#discover').text(data.yearDiscovered);
+		$('#esymbol').text(data.symbol || 'NA');
+		$('#group').text(data.groupBlock || 'NA');
+		$('#arad').text(data.atomicRadius || 'NA');
+		$('#phase').text(data.standardState || 'NA');
+		$('#ename').text(data.name || 'NA');
+		$('#irad').text(data.ionRadius || 'NA');
+		$('#mp').text(data.meltingPoint || 'NA');
+		$('#ano').text(data.atomicNumber || 'NA');
+		$('#vrad').text(data.vanDelWaalsRadius || 'NA');
+		$('#bp').text(data.boilingPoint || 'NA');
+		$('#amass').text(data.atomicMass || 'NA');
+		$('#btype').text(data.bondingType || 'NA');
+		$('#density').text(data.density || 'NA');
+		$('#eaff').text(data.electronAffinity || 'NA');
+		$('#ie').text(data.ionizationEnergy || 'NA');
+		$('#eneg').text(data.electronegativity || 'NA');
+		$('#oxst').text(data.oxidationStates || 'NA');
+		$('#discover').text(data.yearDiscovered || 'NA');
 	}
 	
 	$('.cell').on('click', function(){
