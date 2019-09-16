@@ -48,7 +48,7 @@ function main()
 		
 		//Make request
 		var $eid = $(this).attr('id');
-		request.open('GET','http://localhost/fetch-details?id=' + $eid,true);
+		request.open('GET','/fetch-details?id=' + $eid,true);
 		request.send(null);
 	});
 	
@@ -95,7 +95,7 @@ function main()
 		};
 		
 		//Make request
-		request.open('GET','http://localhost/search?key=' + q,true);
+		request.open('GET','/search?key=' + q,true);
 		request.send(null);
     }
 
